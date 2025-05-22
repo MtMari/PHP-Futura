@@ -1,0 +1,38 @@
+<!-- Scrivere un file PHP in cui sia presente un array associativo di piatti con nome, 
+ 
+lista degli ingredienti, e prezzo. Scrivere un file HTML dove sia possibile selezionare tramite tendina un primo e un secondo, 
+
+dopodiché inviarli al PHP che dovrà scrivere nome dei piatti selezionati, lista degli ingredienti e prezzo. -->
+
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>es-piatti</title>        
+    </head>
+    <body style="font-family: sans-serif">
+        <h2>Scopri il nostro menù:</h2>
+        <h4>Seleziona i piatti che preferisci per vederne gli ingredienti ed il prezzo.</h4>
+        <form action="#" method="#">
+            <label for="primo">Seleziona la prima portata</label>
+            <select name="primo" id="primo">
+                <option value="1">Tortelloni Ricotta e Spinaci</option>
+                <option value="2">Insalata di Pasta</option>
+                <option value="3">Tortellini in Brodo</option>
+                <option value="4">Tagliatelle al Ragù</option>
+            </select>
+            <br>
+            <br>
+            <label for="secondo">Seleziona la seconda portata:</label>
+            <select name="secondo" id="secondo">
+                <option value="1">Cotoletta alla Milanese con Patate</option>
+                <option value="2">Arrosto con Patate</option>
+                <option value="3">Cotoletta di Fungo Porcino</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="Seleziona">
+        </form>
+    </body>
+</html>
