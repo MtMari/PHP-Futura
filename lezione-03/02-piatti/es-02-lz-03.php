@@ -5,44 +5,59 @@
  * dopodiché inviarli al PHP che dovrà scrivere nome dei piatti selezionati, lista degli ingredienti e prezzo. 
  */
 
- $piatti = array(
-    'primo' => array(
-        1 => array(
-            'nome' => 'Tortelloni Ricotta e Spinaci',
-            'ingredienti' => array('pasta', 'ricotta', 'spinaci'),
-            'prezzo' => 12.00
+    $piatti = array(
+        'primo' => array(
+            1 => array(
+                'nome' => 'Tortelloni Ricotta e Spinaci',
+                'ingredienti' => array('pasta', 'ricotta', 'spinaci'),
+                'prezzo' => 12.00
+            ),
+            2 => array(
+                'nome' => 'Insalata di pasta',
+                'ingredienti' => array('pasta', 'uova', 'pomodorini', 'insalata', 'acciughe', 'capperi'),
+                'prezzo' => 10.00
+            ),
+            3 => array(
+                'nome' => 'Tortellini in Brodo',
+                'ingredienti' => array('pasta', 'carne', 'brodo di carne'),
+                'prezzo' => 12.00
+            ),
+            4 => array(
+                'nome' => 'Tagliatelle al Ragù',
+                'ingredienti' => array('pasta', 'ricotta', 'spinaci'),
+                'prezzo' => 12.00
+            )
         ),
-        2 => array(
-            'nome' => 'Insalata di pasta',
-            'ingredienti' => array('pasta', 'uova', 'pomodorini', 'insalata', 'acciughe', 'capperi'),
-            'prezzo' => 10.00
-        ),
-        3 => array(
-            'nome' => 'Tortellini in Brodo',
-            'ingredienti' => array('pasta', 'carne', 'brodo di carne'),
-            'prezzo' => 12.00
-        ),
-        4 => array(
-            'nome' => 'Tagliatelle al Ragù',
-            'ingredienti' => array('pasta', 'ricotta', 'spinaci')
-            'prezzo' => 12.00
+        'secondo' => array(
+            1 => array(
+                'nome' => 'Cotoletta alla Milanese con Patate',
+                'ingredienti' => array('pollo impanato', 'patate'),
+                'prezzo' => 11.00
+            ),
+            2 => array(
+                'nome' => 'Arrosto con Patate',
+                'ingredienti' => array('pollo', 'patate'),
+                'prezzo' => 10.00
+            ),
+            3 => array(
+                'nome' => 'Cotoletta di Fungo Porcino',
+                'ingredienti' => array('Porcino impanato'),
+                'prezzo' => 13.00
+            )
         )
-    ),
-    'secondo' => array(
-        1 => array(
-            'nome' => 'Cotoletta alla Milanese con Patate',
-            'ingredienti' => array('pollo impanato', 'patate'),
-            'prezzo' => 11.00
-        ),
-        2 => array(
-            'nome' => 'Arrosto con Patate',
-            'ingredienti' => array('pollo', 'patate'),
-            'prezzo' => 10.00
-        ),
-        3 => array(
-            'nome' => 'Cotoletta di Fungo Porcino',
-            'ingredienti' => array('Porcino impanato'),
-            'prezzo' => 13.00
-        ),
-    )
-);
+    );
+   
+    // $piani = $piatti[$_POST['primo']][$_POST['secondo']]; 
+    // echo $piani;
+
+// echo print_r($piatti);
+    echo $_SERVER['QUERY_STRING'];
+    foreach ($piatti as $k => $v) {
+        echo '<p style="font-family: sans-serif;">Il piatto '
+            . $v[$_POST['nome']]
+            . ' ha come ingredienti: '
+            // . $v[$_POST['ingredienti']]
+            . ' con un costo di: '
+            . $v[$_POST['prezzo']]
+            . '.</p>';
+    }
