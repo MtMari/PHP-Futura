@@ -5,6 +5,8 @@
  * dopodiché inviarli al PHP che dovrà scrivere nome dei piatti selezionati, lista degli ingredienti e prezzo. 
  */
 
+       
+// echo print_r($_POST, True);
     $piatti = array(
         'primo' => array(
             1 => array(
@@ -46,18 +48,22 @@
             )
         )
     );
-   
-    // $piani = $piatti[$_POST['primo']][$_POST['secondo']]; 
-    // echo $piani;
+    
+      
+    echo '<p>Il piatto "<b>' 
+        . ($piatti['primo'][$_POST['pippo']]['nome'])
+        . '</b>" ha come ingredienti: <b>'
+        . implode(", ", ($piatti['primo'][$_POST['pippo']]['ingredienti']))             //implode: [separatore in string] + [array da unire]
+        . '</b>. '
+        . 'Il costo è di: <b>'
+        . ($piatti['primo'][$_POST['pippo']]['prezzo'])
+        . '€</b>.</p>';
 
-// echo print_r($piatti);
-    echo $_SERVER['QUERY_STRING'];
-    foreach ($piatti as $k => $v) {
-        echo '<p style="font-family: sans-serif;">Il piatto '
-            . $v[$_POST['nome']]
-            . ' ha come ingredienti: '
-            // . $v[$_POST['ingredienti']]
-            . ' con un costo di: '
-            . $v[$_POST['prezzo']]
-            . '.</p>';
-    }
+    echo '<p>Il piatto "<b>' 
+        . ($piatti['secondo'][$_POST['pippo']]['nome'])
+        . '</b>" ha come ingredienti: <b>'
+        . implode(", ", ($piatti['secondo'][$_POST['pippo']]['ingredienti']))
+        . '</b>. '
+        . 'Il costo è di: <b>'
+        . ($piatti['secondo'][$_POST['pippo']]['prezzo'])
+        . '€</b>.</p>';
