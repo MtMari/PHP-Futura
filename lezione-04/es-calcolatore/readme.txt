@@ -1,23 +1,12 @@
-proggramma con:
-
-- file libreria con funzioni che calcolano: 
-            - A triangoli 
-            - A rettangoli
-            - A cerchi
--OK- file index: 
-            - chiedere all'utente con tendina a cui scegliere il tipo di figura di cui calcolare l'A 
-            - e poi sotto mettere 3 campi in cui scrivere i dati (a, b e c-> a seconda della figura scelta!)
-            - invia per ottenere il risultato
+Scrivere:
+- OK- una libreria con tre funzioni per il calcolo dell'area di cerchio, triangolo e rettangolo. 
+- OK- Scrivere un file index.php che con una tendina faccia scegliere all'utente la figura di cui calcolare l'area. 
+- Scrivere un file per ogni figura, che chieda i dati necessari, e includere il file corretto in base al valore selezionato nella tendina. 
+===ATTENZIONE=== significa: crea 1 file x ogni figura > ogni file chiede i rispettivi dati E INCLUDE il file corretto in base al valore selezionato in tendina
+- Infine fare in modo che, sulla base dei dati passati, il programma visualizzi l'area della figura scelta.
 
 
 
-A triangolo: b * a / 2
-A rettangolo: b * a
-A cerchio: piGreco * r^2
-
-
---20.05-problematiche:
-
-- riguardare come collegare info in post tra index e i due file php --> l'if passa direttamente al secondo blocco di codice, quindi le informazioni del primo blocco di codice non vengono lavorate correttamente
-
-- una volta sistemata la prima problematica, passare a settare le rimanenti due aree
+COSE DA VALUTARE:
+- fare un file output che richiami le funzioni con eventuali if-else
+- creare un file con tutti i file-opzioni  -> file totale da inserire nel primo form: il form si collega a questo file e da lì sceglie quali file aprire (chiamarlo progr.php??)
