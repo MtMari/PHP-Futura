@@ -1,33 +1,24 @@
 <?php
 
-    /**
+   /**
      * FUNZIONI MATEMATICHE
-     */
+   */
 
-     /** A triangolo: b * a / 2
-       * A rettangolo: b * a
-       * A cerchio: piGreco * r^2 
-       */
+   /** A triangolo: b * a / 2
+    * A rettangolo: b * a
+    * A cerchio: piGreco * r^2 
+   */
 
-    $base = $_POST["base"];
-    $altezza = $_POST["altezza"];
-    $raggio = $_POST["raggio"]; 
 
-   /*  function floatval( $raggio ) {
-         return $r_float;
-     } */
 
-     function a_tr( $base, $altezza ) {
-        return $base * $altezza / 2;
-     }
+   function a_tr( $base_tr, $altezza_tr ) {
+      return $base * $altezza / 2;
+   }
 
-     function a_rtt( $base, $altezza ) {
-        return $base * $altezza;
-     }
+   function a_rtt( $base_rtt, $altezza_rtt ) {
+      return $base * $altezza;
+   }
 
-/*      function a_cr( $r_float ) {
-        return 3.14 * ( pow( $r_float, 2 ) );
-     } */
-     function a_cr( $raggio ) {
-        return 3.14 * ($raggio ** 2);    //( pow( $raggio, 2 ) );
-     }     
+   function a_cr( $raggio ) {
+      return 3.14 * ( $raggio ** 2 ); 
+   }     
