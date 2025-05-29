@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{titolo}}</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <h1>{{h1}}</h1>
+        <p>{{contenuto}}</p>
+        <form action="index.php?pagina=2" method="post">
+            <input type="hidden" name="figura" value="3">
+            <input type="text" name="raggio" placeholder="raggio" value="">
+            <input type="submit" value="scegli">
+        </form>
+        <ul>{{menu}}</ul>
+    </body>
+</html>
+
+
+<!-- 
+    - l'hidden ci serve per targettarne il value senza che venga mostrata all'utente. WHY? Perché fa riferimento allo switch di 'calcolo.php' (che lavora on gli array di $pagina (definita in 'index.php'), sostituendone i )
+    - mando il tutto a ?pagina=2, cioè in GET. come? ce l'ho scritto io giocando con le chiavi ed i valori di $pagine  e del corispettivo costrutto IF + ISSET 
+-->

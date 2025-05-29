@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{titolo}}</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <h1>{{h1}}</h1>
+        <p>{{contenuto}}</p>
+        <form action="index.php?pagina=3" method="post">
+            <select name="figure">{{selectFigure}}</select>
+            <input type="submit" value="scegli">
+        </form>
+        <ul>{{menu}}</ul>
+    </body>
+</html>
+
+<!--
+    - il select rimanda a 'figure' che lo utilizzerà in 'figure.php' e creaSelect per sostituire i dati E a 'area.php' per gestire i require/include ed alcune sostituzioni dei placeholders
+    - mando il tutto a ?pagina=3, cioè in GET. come? ce l'ho scritto io giocando con le chiavi ed i valori di $pagine  e del corispettivo costrutto IF + ISSET (cioè giocandomi a favore una differenza trs GET e POST: con GET i dati si leggono, quindi se rimando il form all'URL con il GET già inserito, grazie al resto del mio programma rimanderò l'utente alla pagina indicata!)-->
