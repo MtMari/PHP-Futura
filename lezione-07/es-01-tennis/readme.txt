@@ -22,7 +22,7 @@ PASSI:
 1- crea files principali
 2- refactoring aggiungendo render.php
 3- dividi tutto per cartelle -!!!-> sistema paths 
-4- aggiungi array pagine con rispettivi placeholders e funczioni
+4- aggiungi array pagine con rispettivi placeholders e funzioni
 5- rivedi css
 
 
