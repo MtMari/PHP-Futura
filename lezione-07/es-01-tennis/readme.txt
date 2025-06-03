@@ -26,5 +26,10 @@ PASSI:
 5- rivedi css
 
 
-ERRORI:
+VALUTARE:
 - css/style.css: classe 'large' non funzionante;
+- l'output di array_rand non è randomico, sia che la dichiarazione delle variabili rand avvenga fuori o dentro il costrutto foreach -> geekforgeeks/How to get random value out of an array in PHP?
+- da risistemare array $squadre 
+
+-OK- rivalutare prima parte: attenersi alla consegna
+-OK - integrare la funzione squadre(plhlds) con la funzione array_rand

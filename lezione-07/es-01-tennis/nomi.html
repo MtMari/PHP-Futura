@@ -6,12 +6,32 @@
     <meta name="stylesheet" href="css/style.css">
     <title>Nomi</title>
 </head>
-<body class="font">
+<body style= "font-family: sans-serif">
     <h1>Crea la tua squadra</h1>
-    <p class="large">Seleziona i giocatori:</p>
-    <form action="#" method="post">     <!-- # -->
-    <select>{{opzione}}</select>
-    <input type="submit" value="Conferma">
+    <p style="font-size: large">Seleziona i giocatori:</p>
+    <form action="coppie.php" method="post">     <!-- # -->
+        <label for="pl1">Giocatore 1:</label>
+        <br>
+        <input type="text" value="" name="pl1" placeholder="Giocatore 1">
+        <br>
+        <br>
+        <label for="pl2">Giocatore 2:</label>
+        <br>
+        <input type="text" value="" name="pl2" placeholder="Giocatore 2"> 
+        <br>
+        <br>
+        <label for="pl2">Giocatore 3:</label>
+        <br>
+        <input type="text" value="" name="pl3" placeholder="Giocatore 3">
+        <br>
+        <br>
+        <label for="pl3">Giocatore 4:</label>
+        <br>
+        <input type="text" value="" name="pl4" placeholder="Giocatore 4">         
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Conferma">
     </form>
     
 </body>
