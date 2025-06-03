@@ -1,0 +1,13 @@
+/* generiche */
+* {
+   box-sizing: border-box;
+}
+
+/* font */
+.font {
+    font-family: sans-serif;
+}
+
+.large {
+    font-size: x-large;
+}
