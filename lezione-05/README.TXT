@@ -4,6 +4,12 @@ Utilizzare coppie di file PHP e HTML con un approccio a template per realizzare 
 
 -------
 
+31.05
+
+- prima parte funzionante -> il template è limitato => utilizzare i placeholders per creare da zero ogni opzione di select
+
+-------
+
 30.05
 
 dopo aver analizzato l'esempio svolto in classe, l'intero esercizio è da rivalutare
