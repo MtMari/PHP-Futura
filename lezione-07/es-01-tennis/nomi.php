@@ -1,9 +1,9 @@
 <?php
 
     // parsing tpl
-    $tpl = file_get_contents('nomi.html');
+    $template = file_get_contents('tpl/nomi.html');
 
-    echo $tpl;
+    echo $template;
 
 
     // se hai tempo: aggiungi gli array x le pagine
