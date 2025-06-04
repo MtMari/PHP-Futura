@@ -17,5 +17,15 @@ MAPPA:
 
 
 PASSI:
-1- crea file principali a coppie
-2- refactoring
+1- crea file principali a coppie (1:ok-2:ok)
+2- aggiungi array pagine
+3- refactoring
+4- converti i dati
+
+
+distanza = velocità * tempo
+
+tempo = distanza / velocità
+T= x metr * 600 = secondi
+V= x km/h * 1000m / 3600s = m/s
+D = 1km == 1000m
