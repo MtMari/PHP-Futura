@@ -12,11 +12,11 @@
 
 
    function a_tr( $base_tr, $altezza_tr ) {
-      return $base * $altezza / 2;
+      return $base_tr * $altezza_tr / 2;
    }
 
    function a_rtt( $base_rtt, $altezza_rtt ) {
-      return $base * $altezza;
+      return $base_rtt * $altezza_rtt;
    }
 
    function a_cr( $raggio ) {

@@ -9,11 +9,11 @@
             . PHP_EOL
             . '<select name="figura" id="figura">'
             . PHP_EOL
-            . '<option value="tr">Triangolo</option>'
+            . '<option value="triangolo">Triangolo</option>'
             . PHP_EOL
-            . '<option value="a_rtt">Rettangolo</option>'
+            . '<option value="area_rettangolo">Rettangolo</option>'
             . PHP_EOL
-            . '<option value="a_cr">Cerchio</option>'
+            . '<option value="area_cerchio">Cerchio</option>'
             . PHP_EOL
             . '</select>'
             . PHP_EOL
