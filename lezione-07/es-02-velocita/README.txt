@@ -6,21 +6,21 @@ _2:
 
 MAPPA:
 
-- input.html (tpl) + input.php <-R- lib/render.php, lib/calcolo.php
+- input.html (tpl) + input.php <-R- lib/render.php
 	|POST
 	v
 - output.php + output.html(tpl) <-R- lib/render.php, lib/calcolo.php
+	|									M
+	|link								|_R_lib/calcolo.php(variabili condivise)
 	|
-	|link
-	|
-- input.html (tpl) + input.php <-R- lib/render.php, lib/calcolo.php
+- input.html (tpl) + input.php <-R- lib/render.php
 
 
 PASSI:
-1- crea file principali a coppie (1:ok-2:ok)
+1-OK- crea file principali a coppie (1:ok-2:ok)
 2- aggiungi array pagine
-3- refactoring
-4- converti i dati
+3-OK- refactoring
+4-NO- converti i dati
 
 
 distanza = velocità * tempo
