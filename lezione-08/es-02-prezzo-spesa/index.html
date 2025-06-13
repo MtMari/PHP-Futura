@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+</head>
+<body style="font-family: sans-serif;">
+    <p style="font-size: large;">{{content}}</p>
+    <form action="index.php" method="post">
+        <label for="prodotto" name="prodotto"></label>
+        <input type="text" name="prodotto" placeholder="Prodotto" required>
+        <label for="prezzo" name="prezzo"></label>
+        <input type="number" name="prezzo" placeholder="Prezzo" required>
+        <input type="submit" value="Aggiungi">
+    </form>
+    <br>
+<!--     <p style="text-decoration: underline;">Totale: {{totale}}</p>
+ -->    <p style="font-size: small;">Lista: {{lista}}</p>
+</body>
+</html>
