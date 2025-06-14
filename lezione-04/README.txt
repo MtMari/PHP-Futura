@@ -6,4 +6,4 @@ CONSEGNE:
 2-OK: Scrivere un programma che calcoli il minimo comune multiplo di due numeri. Scrivere una libreria con una funzione per il calcolo dell'MCM e una libreria per l'output, e mettere tutto insieme in un file index.php (per le librerie usare require) che preveda due valori di default oppure valori specificati tramite un file di configurazione (per la configurazione usare include).
 
 
-3: Scrivere un programma che includa tutte le librerie degli esercizi precedenti e sia organizzato in modo che il file index.php faccia selezionare all'utente quale calcolo svolgere, poi prevedere un file php per ogni calcolo nel quale chiedere all'utente gli input necessari, infine prevedere un file che visualizzi l'output dell'operazione.
+3-OK: Scrivere un programma che includa tutte le librerie degli esercizi precedenti e sia organizzato in modo che il file index.php faccia selezionare all'utente quale calcolo svolgere, poi prevedere un file php per ogni calcolo nel quale chiedere all'utente gli input necessari, infine prevedere un file che visualizzi l'output dell'operazione.
