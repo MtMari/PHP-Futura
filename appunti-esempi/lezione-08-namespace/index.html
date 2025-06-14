@@ -7,14 +7,11 @@
 </head>
 <body style="font-family: sans-serif;">
     {{content}}
-    <form action="main.php" method="post">
-        <label for="item" name="item"></label>
-        <input type="text" name="item" placeholder="Prodotto" required>
-        <input type="submit" value="Aggiungi">
-    </form>
+    {{form}}
 
     <p>{{lista}}</p>
     <p style="font-size: small;"> {{prodotti}}</p>
+
 
 </body>
 </html>

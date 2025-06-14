@@ -10,8 +10,3 @@ CONSEGNA:
 - index.php (array tpl, render tpl, calcolo, main codice) + index.html(tpl)
 
 - prezzo_spesa.db ((un)serialize)
-
-
-DA SISTEMARE:
-
-- risultato array e calcolo da estrapolare ed usarlo con approccio a template
