@@ -7,8 +7,7 @@
      */
 
 
-    //  1.fai i campi della tabella con Anagrafe\lista()=>dove sta?!: lib/anagrafe.php 
-    // GIOIA MIA, non fa i campi, ti legge il file db se c'è, altrimenti lo crea=>=> è solo un richiamo, salvatalo in una variabile, così puoi riutilizzare il sistema di lettura-scrittura del db =>=> se esiste, il file ha i dati che andranno nella tabella(passo 2.2)
+    //  1.LETTURA O CREAZIONE FILE DB: legge il file db se c'è, altrimenti lo crea=>=> è solo un richiamo, salvatelo in una variabile, così puoi riutilizzare il sistema di lettura-scrittura del db =>=> se esiste, il file ha i dati che andranno nella tabella(passo 2.2)
 
     $anagrafe = Anagrafe\lista();
 
