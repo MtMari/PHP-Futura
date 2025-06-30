@@ -30,7 +30,8 @@
 
         $campi_tabella = [];
 
-        // tag($tag, $attr = [], $content = '')
+        // sintassi funzione tag: tag($tag, $attr = [], $content = '')
+
         // $campi_tabella[] = HTML\tag('td', [], $id);
         $campi_tabella [] = HTML\tag('td', [], $cane['nome']);
         $campi_tabella [] = HTML\tag('td', [], $cane['eta']);
@@ -72,7 +73,7 @@
      * - al testo aggiungi la funzione form (si compone con i suoi argomenti)
     */
 
-    // form($attr = [], $fields = [])
+    // sintassi funzione form: form($attr = [], $fields = [])
     $pagina_richiesta['contenuto']['testo'] .= HTML\form(
 
         // attributi

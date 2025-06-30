@@ -13,18 +13,31 @@
      * @return boolean true se l'aggiunta è andata a buon fine, false altrimenti
      */
     function aggiungi($nome, $eta) {
+
         $anagrafe = lista();
+
+        // crea id
         $id = md5('anagrafe-'.microtime(true).rand(0, 1000));
+
+        // aggiungi all'id nome ed età
         $anagrafe[ $id ] = [
+
             'nome' => $nome,
             'eta' => $eta
         ];
+
+        // logica per scrivere nel db
         $h = fopen('./anagrafe.db', 'w+');
+
         if ($h === false) {
+
             return false;
+
         } else {
+
             fwrite($h, serialize($anagrafe));
             fclose($h);
+
             return true;
         }
     }
@@ -35,8 +48,11 @@
      */
     function lista() {
         if (!file_exists('./anagrafe.db')) {
+
             return [];
+
         } else {
+
             return unserialize(file_get_contents('./anagrafe.db'));
         }
     }
@@ -47,18 +63,28 @@
      * @return boolean true se l'eliminazione è andata a buon fine, false altrimenti
      */
     function elimina($id) {
+
         $anagrafe = lista();
+
+        // logica per eliminare dal db        
         if (isset($anagrafe[$id])) {
+
             unset($anagrafe[$id]);
             $h = fopen('./anagrafe.db', 'w+');
+
             if ($h === false) {
+
                 return false;
+
             } else {
+
                 fwrite($h, serialize($anagrafe));
                 fclose($h);
+
                 return true;
             }
         } else {
+
             return false;
         }
     }
@@ -71,21 +97,33 @@
      * @return boolean true se l'aggiornamento è andato a buon fine, false altrimenti
      */
     function modifica($id, $nome, $eta) {
+
         $anagrafe = lista();
+
         if (isset($anagrafe[$id])) {
+
+            // aggiungi all'id nome ed età
             $anagrafe[$id] = [
                 'nome' => $nome,
                 'eta' => $eta
             ];
+
             $h = fopen('./anagrafe.db', 'w+');
+
+            // logica per modificare dati del db 
             if ($h === false) {
+
                 return false;
+
             } else {
+
                 fwrite($h, serialize($anagrafe));
                 fclose($h);
+
                 return true;
             }
         } else {
+
             return false;
         }
     }

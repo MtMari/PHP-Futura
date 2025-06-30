@@ -1,0 +1,31 @@
+17.06:  - identificativo univoco
+        - pattern MVC
+
+
+- ini_set('display_errors', 1); -> mostra errori(1 = true)
+
+- ash: algoritmo di cifratura -> md5
+
+- unset non svuota la variabile, LA ELIMINA DALLA MEMORIA
+
+- define([oggetto], [nuovo 'nome']): definisci qualcosa per richiamarlo più facilmente
+
+
+||||||||||||||||||||||||||||||||||||||||||||
+||||||||__IDENTIFICATIVO UNIVOCO__||||||||||
+
+- è un'etichetta associabile biunivocamente ad un oggetto o file del mio db
+
+- why? permettono di semplificare il riferimento agli oggetti -> modifiche ai dati più facilitate
+
+- fino ad adesso abbiamo fatto COLLEZIONE RANDOM/ANONIME, ora faremo le COLLEZIONI INDICIZZATE, come nei database di MySQL
+
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||__IMPLEMENTAZIONE PATTERN MODEL VIEW CONTROLLER: MVC__||||||||||||||||
+
+- sviluppo in cui:
+    - UNA PARTE DI CODICE CONTROLLA I DATI in uscita ed entrata
+    - UNA PARTE DI VIEW
+    - il MODEL, cioè il dato vero e proprio.
+

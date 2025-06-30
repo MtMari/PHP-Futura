@@ -17,13 +17,19 @@
     function tag($tag, $attr = [], $content = '') {
         
         $t = '<' . $tag;
+
         foreach ($attr as $key => $value) {
+
             $t .= ' ' . $key . ( ( ! empty( $value ) ) ? '="' . htmlspecialchars($value) . '"' : '' );
         }
+
         $t .= '>';
+
         if( ! empty($content) ) {
+
             $t .= $content . '</' . $tag . '>';
         }
+
         $t . PHP_EOL;
 
         return $t;
@@ -35,6 +41,8 @@
      * 
      * VALORE VUOTO:
      * <tag chiave>
+     * 
+     * [vedi esercitazione lezione 08-namespace]
     */
 
     /**
@@ -46,9 +54,13 @@
     function form($attr = [], $fields = []) {
 
         $form = [];
+
         foreach($fields as $name => $attributi) {
+
             if( ! empty($attributi) ){
+
                 $form[] = tag(
+                    
                     $attributi['field'],
                     $attributi
                 );

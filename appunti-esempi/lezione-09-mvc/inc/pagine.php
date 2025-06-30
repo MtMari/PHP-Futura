@@ -32,7 +32,6 @@
     }
 
     // salva $_REQUEST['p'] dell'array $pagine in una variabile per facilitarne l'uso
-
     $pagina_richiesta = $pagine[$_REQUEST['p']];
 
 
@@ -58,7 +57,7 @@
         );
     }
 
-    // sis, devi creare ed la chiave 'menu' e imploderci il risultato dell'array (che era) vuoto o come 'azz te sostituisce la roba lmao
+    // devi creare la chiave 'menu' e imploderci il risultato dell'array (che era) vuoto o non riesce a fare la sostituzione
 
     $pagina_richiesta['contenuto']['menu'] = implode(' | ', $voci_pagine); 
 

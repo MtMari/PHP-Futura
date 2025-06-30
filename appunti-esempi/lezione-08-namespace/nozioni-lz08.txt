@@ -1,0 +1,29 @@
+- gruppi di oggetti con matrice comune, ad esempio funzioni e variabili raggruppate
+
+
+- NAMESPACE -> va dichiarato all'inizio del file
+
+
+es, SINTASSI e come si comportano i file tra loro:
+
+[file: dati.php]
+<?php
+    namespace Pippo;
+
+    $a = 5
+
+[file: index.php]
+<?php
+
+    require ('dati.php');
+    $a = 3;
+
+    echo Pippo\$a = 5;
+
+- servono per evitare di ripetere classi ed oggetti
+
+- può essere usato per crearti i tag HTML
+- 1 namespace per file!!
+
+- func htmlspecialchars() -> controlla caratteri compatibili con codice HTML
+- func empty() -> controlla se è vuoto

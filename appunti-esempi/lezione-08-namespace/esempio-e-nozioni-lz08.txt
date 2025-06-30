@@ -1,0 +1,29 @@
+libreria che genera tag HTML con un approccio generalista -> rubrica telefonica
+
+
+index.php <-R- render.php, html.php
+    |post
+    v
+gestione.php <-R- render.php, html.php, rubrica.php
+    |
+    |link
+    |
+index.php <-R- render.php, html.php  
+
+-var_dump([variabile]) -> printa il contenuto della variabile
+
+-file_exists([nome file])
+
+FUNZIONI APERTURA file: si apre in scrittura, lettura(r) o sovrascrittura, hanno il segno '+', cioè se non esiste, crealo
+
+-fopen([nome file con path ed ext], r+) r(ead)+ o w(rite)+
+-fclose()
+-fwrite()
+
+-serve un handle 
+
+- serializzazione, salvare un formato testo leggibile da php, l'opposto è deserializzazione. Vogliono una stringa
+    |
+    |
+    v
+    serialize()   e unserialize()
