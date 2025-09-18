@@ -1,0 +1,33 @@
+Utilizzando l'approccio per route, scrivere un sito che 
+    - proponga all'utente tre tendine per scegliere il primo, il secondo e il dolce, 
+    - dopodiché una volta fatta la scelta portare l'utente a una pagina di conferma che mostri il menù 
+        e il costo totale delle portate 
+        e un tasto per la conferma, 
+    - infine una pagina che ringrazi l'utente dopo la conferma del menù scelto.
+
+    PER ROOT: HTACCESS
+
+quante pagine?  - benvenuto/404(index)
+                - form scelta
+                - form conferma
+                - ringraziamento
+
+lib?    - render.php
+        - calcolo.php
+
+inc?    - pagine.php
+        - dati.php
+
+pagina benvenuto: INDEX
+|
+| link
+|
+form scelta: 3 tendine
+|
+| POST
+v
+form conferma: calcolo + riepilogo dati post + tasto conferma
+|
+| POST
+v
+ringraziamento: INDEX ---- link: form scelta
